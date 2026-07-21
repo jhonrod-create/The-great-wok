@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contáctanos - The Great Wok</title>
+  <link rel="stylesheet" href="css/contactos.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <a href="index.html" class="btn-volver">← Volver al inicio</a>
+      <h1>🍽️ Contáctanos</h1>
+      <p>Estamos aquí para atenderte</p>
+    </div>
+  </header>
+
+  <div class="container">
+    
+    <!-- Info del restaurante -->
+    <section class="info-grid">
+      <div class="info-card">
+        <h3>📍 Dirección</h3>
+        <p>Av. Principal 123<br>Chincha Alta, Ica</p>
+      </div>
+      <div class="info-card">
+        <h3>📞 Teléfono</h3>
+        <p>+51 999 123 456</p>
+        <p>+51 056 123 789</p>
+      </div>
+      <div class="info-card">
+        <h3>✉️ Email</h3>
+        <p>reservas@thegreatwok.com</p>
+      </div>
+      <div class="info-card">
+        <h3>🕒 Horario</h3>
+        <p>Lun - Dom: 12pm - 11pm</p>
+      </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section class="form-section">
+      <h2>Envíanos un mensaje</h2>
+      <p>¿Reservas, consultas o sugerencias? Escríbenos</p>
+      
+      <!-- ... todo igual hasta el formulario ... -->
+<form id="formContacto">
+  <div class="form-row">
+    <input type="text" placeholder="Tu nombre" required>
+    <input type="tel" id="telefono" placeholder="Numero" maxlength="9" required>
+  </div>
+  <input type="email" placeholder="Tu email" required>
+  <select required>
+    <option value="">Motivo de contacto</option>
+    <option value="reserva">Reserva</option>
+    <option value="consulta">Consulta</option>
+    <option value="sugerencia">Sugerencia</option>
+    <option value="delivery">Delivery</option>
+  </select>
+  <textarea rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+  <button class="btn" type="submit">Enviar mensaje</button>
+</form>
+<!-- ... resto igual ... -->
+
+<!-- NOTIFICACIÓN ÉXITO -->
+<div id="notificacion" class="notificacion">
+  ✅ ¡Mensaje enviado correctamente!
+</div>
+
+<!-- NOTIFICACIÓN ERROR -->
+<div id="notificacionError" class="notificacion error">
+  ❌ El teléfono debe tener 9 dígitos
+</div>
+
+      <script src="js/contactos.js"></script>
+      
+</body>
+</html>
